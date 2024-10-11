@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Insightly Date Updater",
+  "version": "1.0",
+  "description": "Update Insightly date fields directly",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://crm.na1.insightly.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
